@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "PostManagementApp",
+    "slug": "PostManagementApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icons/appLogo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./src/assets/icons/appLogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icons/appLogo.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
