@@ -19,10 +19,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/icons/appLogo.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.shakeelmazhar.PostManagementApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7ec3a43c-7d75-4d0f-8539-2c31fc2e8809"
+      }
     }
   }
 }

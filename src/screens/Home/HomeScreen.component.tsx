@@ -80,7 +80,7 @@ const HomeScreen: React.FC = ({ navigation }) => {
   };
 
   const onPressAddPosts = () => {
-    navigation.navigate("AddPost");
+    navigation.navigate("AddPost", {});
   };
 
   const onPressEdiPost = ({

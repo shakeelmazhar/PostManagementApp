@@ -10,7 +10,13 @@ import { RNSafeAreaView } from "../../components/templates";
 import { colors } from "../../utils/colors";
 
 const AddPostScreen: React.FC = ({ navigation, route }) => {
-  const { id, postTitle, postDescription, edit, onGoBack } = route.params;
+  const {
+    id = 1,
+    postTitle = "",
+    postDescription = "",
+    edit = false,
+    onGoBack,
+  } = route.params;
   const [title, setTitle] = useState(postTitle || "");
   const [body, setBody] = useState(postDescription || "");
 
@@ -39,22 +45,6 @@ const AddPostScreen: React.FC = ({ navigation, route }) => {
       })
       .catch((e) => Alert.alert("Error", "Failed to edit post." + e));
   };
-
-  // useEffect(() => {
-  //   // Add a listener for the back button
-  //   const unsubscribe = navigation.addListener("beforeRemove", (e) => {
-  //     // Prevent the default behavior
-  //     e.preventDefault();
-
-  //     // Trigger the callback
-  //     onGoBack?.onGoBack();
-  //     console.debug("useEffect:::::   ");
-  //     // Manually go back
-  //     navigation.dispatch(e.data.action);
-  //   });
-
-  //   return unsubscribe;
-  // }, [navigation, onGoBack]);
 
   return (
     <RNSafeAreaView style={styles.container}>
